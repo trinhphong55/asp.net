@@ -1,0 +1,5 @@
+E:\visua\DOAN\DTO\bin\Debug\DTO.dll
+E:\visua\DOAN\DTO\bin\Debug\DTO.pdb
+E:\visua\DOAN\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+E:\visua\DOAN\DTO\obj\Debug\DTO.dll
+E:\visua\DOAN\DTO\obj\Debug\DTO.pdb

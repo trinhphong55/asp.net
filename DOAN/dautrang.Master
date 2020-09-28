@@ -1,0 +1,191 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="dautrang.Master.cs" Inherits="DOAN.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+  <title>Runners sport  A Ecommerce Category Flat a Bootstarp  Website Template | Home :: w3layouts</title>
+  <script src="js/jquery.min.js"></script>
+  <link href="web/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <meta name="keywords" content="Classy Login form Responsive, Login form web template, Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+  <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'/>
+  <meta charset="utf-8"/>
+
+  <link href="web/style.css" rel="stylesheet" type="text/css" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="assets/css/Footer-with-social-icons.css"/>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'/>
+  <script src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/easing.js"></script>
+  <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+  <link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/form.css" rel="stylesheet" type="text/css" media="all" />
+  <script type="text/javascript" src="js/megamenu.js"></script>
+  <script>$(document).ready(function () { $(".megamenu").megamenu(); });</script>
+  <script src="js/menu_jquery.js"></script>
+  <script src="js/jquery.easydropdown.js"></script>
+  <script src="js/jquery.etalage.min.js"></script>
+  <script>
+      jQuery(document).ready(function ($) {
+
+          $('#etalage').etalage({
+              thumb_image_width: 300,
+              thumb_image_height: 400,
+              source_image_width: 800,
+              source_image_height: 1000,
+              show_hint: true,
+              click_callback: function (image_anchor, instance_id) {
+                  alert('Callback example:\nYou clicked on an image with the anchor: "' + image_anchor + '"\n(in Etalage instance: "' + instance_id + '")');
+              }
+          });
+
+      });
+  </script>
+
+
+
+</head>
+<body>
+   
+  <asp:ContentPlaceHolder ID="head" runat="server">
+
+</asp:ContentPlaceHolder>
+     <form runat="server">
+<div class="header">
+ <div class="top_bg">
+  <div class="container">
+    <div class="header_top">
+      <div class="logo">
+       <a href="index.html"><img src="images/logo.png" alt=""/></a>
+     </div>
+     <div class="top_right">
+      <ul>
+        <li><asp:HyperLink ID="dangki" NavigateUrl="dangki.aspx" runat="server" Visible="true">Create Account</asp:HyperLink></li>
+
+        <li><asp:HyperLink ID="dangnhap" NavigateUrl="dangnhap.aspx" runat="server" Visible="true">Login</asp:HyperLink></li>
+          <li><asp:Image ID="imganhdaidien" style="border-radius: 50px; width: 30px;height: 30px"  runat="server" ImageUrl="~/images/nam/mau1/11.jpg"  Visible="false"/></li>
+          
+        Hello:<li>
+         <div class="wrapper">
+          <nav class="menu">
+            <ul class="clearfix">
+              <li>
+               <asp:Label ID="lblLoiChao" class="arrow" runat="server" Text="Label" Visible="true"></asp:Label>
+
+               <ul class="sub-menu">
+                <li><asp:HyperLink ID="doimatkhau" NavigateUrl="Doimatkhau.aspx" runat="server">Đỗi Mật Khẩu</asp:HyperLink></li>
+                <li>
+                   <a> <asp:Button ID="btn_dangxuat" runat="server" style="background-color:blue" Text="Đăng Xuất" OnClick="btn_dangxuat_Click" /></a>
+           </li>
+         </ul>
+       </li>
+     </ul>
+   </nav>
+ </div>
+</li>
+             <li> <asp:Label ID="loichao" class="arrow" runat="server" Text="Label" Visible="false"></asp:Label></li>
+</ul>
+ 
+        
+       
+
+
+
+</div>
+<div class="clearfix"> </div>
+</div>
+</div>
+</div>
+</div>
+<div class="search-container"style="padding-left: 43%;padding-bottom:2%;">
+    <asp:TextBox ID="txttim" type="text" placeholder="bạn muốn tìm gì" runat="server"></asp:TextBox>
+  
+    <asp:Button ID="timkiem" runat="server"  Text="Seach" OnClick="timkiem_Click" />
+
+</div>
+<div class="head-bann">
+  <div class="container">
+   <div class="head-nav">
+    <span class="menu"> </span>
+    <ul class="megamenu skyblue">
+     <li><a class="color1" href="trangchu.aspx">Home</a></li>
+     <li class="grid"><a class="color2" href="sanpham.aspx">Men's</a>	
+     </li>
+     <li><a class="color6" href="contact.aspx">contact</a>
+
+     </li>
+     <li><a class="color7" href="thuonghieu.aspx">Brands</a>
+     </li>
+     <li><a class="color8" href="giohang.aspx">cart(<asp:Label ID="lbl_soluonggiohang" style="color:red" runat="server" ></asp:Label>)</a>
+
+     </li>
+
+   </ul>
+   <div class="clearfix"></div> 
+ </div>
+</div>	
+</div>
+        
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+</asp:ContentPlaceHolder>
+   </form>
+<footer id="myFooter">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 myCols">
+        <h5>Get started</h5>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sign up</a></li>
+          <li><a href="#">Downloads</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3 myCols">
+        <h5>About us</h5>
+        <ul>
+          <li><a href="#">Company Information</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3 myCols">
+        <h5>Support</h5>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Help desk</a></li>
+          <li><a href="#">Forums</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3 myCols">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="social-networks">
+    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="facebook"><i class="fa fa-facebook-official"></i></a>
+    <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+  </div>
+  <div class="footer-copyright">
+    <p>© 2016 Copyright Text </p>
+  </div>
+</footer>
+
+</body>
+</html>

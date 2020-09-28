@@ -1,0 +1,6 @@
+E:\visua\DOAN\DOAN\bin\DOAN.dll.config
+E:\visua\DOAN\DOAN\bin\DOAN.dll
+E:\visua\DOAN\DOAN\bin\DOAN.pdb
+E:\visua\DOAN\DOAN\obj\Debug\DOAN.csprojResolveAssemblyReference.cache
+E:\visua\DOAN\DOAN\obj\Debug\DOAN.dll
+E:\visua\DOAN\DOAN\obj\Debug\DOAN.pdb

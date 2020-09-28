@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6A072D3B-980E-48E7-B477-05BEEEFD40A2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DOAN</RootNamespace>
+    <AssemblyName>DOAN</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\demo.css" />
+    <Content Include="assets\css\Footer-white.css" />
+    <Content Include="assets\css\Footer-with-button-logo.css" />
+    <Content Include="assets\css\Footer-with-logo.css" />
+    <Content Include="assets\css\Footer-with-map.css" />
+    <Content Include="assets\css\Footer-with-social-icons.css" />
+    <Content Include="assets\demo.js" />
+    <Content Include="bin\BUS.dll" />
+    <Content Include="bin\BUS.pdb" />
+    <Content Include="bin\DOAN.dll" />
+    <Content Include="bin\DOAN.pdb" />
+    <Content Include="bin\DTO.dll" />
+    <Content Include="bin\DTO.pdb" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\etalage.css" />
+    <Content Include="css\flexslider.css" />
+    <Content Include="css\form.css" />
+    <Content Include="css\megamenu.css" />
+    <Content Include="css\style.css" />
+    <Content Include="dautrang.Master" />
+    <Content Include="bin\DOAN.dll.config" />
+    <Content Include="images\logo.psd" />
+    <Content Include="images\nam\mau1\1.jpg" />
+    <Content Include="images\nam\mau1\10.jpg" />
+    <Content Include="images\nam\mau1\11.jpg" />
+    <Content Include="images\nam\mau1\12.jpg" />
+    <Content Include="images\nam\mau1\13.jpg" />
+    <Content Include="images\nam\mau1\14.jpg" />
+    <Content Include="images\nam\mau1\15.jpg" />
+    <Content Include="images\nam\mau1\2.jpg" />
+    <Content Include="images\nam\mau1\3.jpg" />
+    <Content Include="images\nam\mau1\4.jpg" />
+    <Content Include="images\nam\mau1\5.jpg" />
+    <Content Include="images\nam\mau1\6.jpg" />
+    <Content Include="images\nam\mau1\7.jpg" />
+    <Content Include="images\nam\mau1\8.jpg" />
+    <Content Include="images\nam\mau1\9.jpg" />
+    <Content Include="images\nam\mau2\1.jpg" />
+    <Content Include="images\nam\mau2\10.jpg" />
+    <Content Include="images\nam\mau2\11.jpg" />
+    <Content Include="images\nam\mau2\12.jpg" />
+    <Content Include="images\nam\mau2\13.jpg" />
+    <Content Include="images\nam\mau2\14.jpg" />
+    <Content Include="images\nam\mau2\15.jpg" />
+    <Content Include="images\nam\mau2\2.jpg" />
+    <Content Include="images\nam\mau2\3.jpg" />
+    <Content Include="images\nam\mau2\4.jpg" />
+    <Content Include="images\nam\mau2\5.jpg" />
+    <Content Include="images\nam\mau2\6.jpg" />
+    <Content Include="images\nam\mau2\7.jpg" />
+    <Content Include="images\nam\mau2\8.jpg" />
+    <Content Include="images\nam\mau2\9.jpg" />
+    <Content Include="images\nam\mau3\1.jpg" />
+    <Content Include="images\nam\mau3\10.jpg" />
+    <Content Include="images\nam\mau3\11.jpg" />
+    <Content Include="images\nam\mau3\12.jpg" />
+    <Content Include="images\nam\mau3\13.jpg" />
+    <Content Include="images\nam\mau3\14.jpg" />
+    <Content Include="images\nam\mau3\15.jpg" />
+    <Content Include="images\nam\mau3\2.jpg" />
+    <Content Include="images\nam\mau3\3.jpg" />
+    <Content Include="images\nam\mau3\4.jpg" />
+    <Content Include="images\nam\mau3\5.jpg" />
+    <Content Include="images\nam\mau3\6.jpg" />
+    <Content Include="images\nam\mau3\7.jpg" />
+    <Content Include="images\nam\mau3\8.jpg" />
+    <Content Include="images\nam\mau3\9.jpg" />
+    <Content Include="images\nam\mau4\1.jpg" />
+    <Content Include="images\nam\mau4\10.jpg" />
+    <Content Include="images\nam\mau4\11.jpg" />
+    <Content Include="images\nam\mau4\12.jpg" />
+    <Content Include="images\nam\mau4\13.jpg" />
+    <Content Include="images\nam\mau4\14.jpg" />
+    <Content Include="images\nam\mau4\15.jpg" />
+    <Content Include="images\nam\mau4\2.jpg" />
+    <Content Include="images\nam\mau4\3.jpg" />
+    <Content Include="images\nam\mau4\4.jpg" />
+    <Content Include="images\nam\mau4\5.jpg" />
+    <Content Include="images\nam\mau4\6.jpg" />
+    <Content Include="images\nam\mau4\7.jpg" />
+    <Content Include="images\nam\mau4\8.jpg" />
+    <Content Include="images\nam\mau4\9.jpg" />
+    <Content Include="images\nam\mau5\1.jpg" />
+    <Content Include="images\nam\mau5\10.jpg" />
+    <Content Include="images\nam\mau5\11.jpg" />
+    <Content Include="images\nam\mau5\12.jpg" />
+    <Content Include="images\nam\mau5\13.jpg" />
+    <Content Include="images\nam\mau5\14.jpg" />
+    <Content Include="images\nam\mau5\15.jpg" />
+    <Content Include="images\nam\mau5\2.jpg" />
+    <Content Include="images\nam\mau5\3.jpg" />
+    <Content Include="images\nam\mau5\4.jpg" />
+    <Content Include="images\nam\mau5\5.jpg" />
+    <Content Include="images\nam\mau5\6.jpg" />
+    <Content Include="images\nam\mau5\7.jpg" />
+    <Content Include="images\nam\mau5\8.jpg" />
+    <Content Include="images\nam\mau5\9.jpg" />
+    <Content Include="images\nu\mau1\1.jpg" />
+    <Content Include="images\nu\mau1\10.jpg" />
+    <Content Include="images\nu\mau1\11.jpg" />
+    <Content Include="images\nu\mau1\12.jpg" />
+    <Content Include="images\nu\mau1\13.jpg" />
+    <Content Include="images\nu\mau1\2.jpg" />
+    <Content Include="images\nu\mau1\3.jpg" />
+    <Content Include="images\nu\mau1\4.jpg" />
+    <Content Include="images\nu\mau1\5.jpg" />
+    <Content Include="images\nu\mau1\6.jpg" />
+    <Content Include="images\nu\mau1\7.jpg" />
+    <Content Include="images\nu\mau1\8.jpg" />
+    <Content Include="images\nu\mau1\9.jpg" />
+    <Content Include="images\nu\mau2\.jpg" />
+    <Content Include="images\nu\mau2\1.jpg" />
+    <Content Include="images\nu\mau2\10.jpg" />
+    <Content Include="images\nu\mau2\11.jpg" />
+    <Content Include="images\nu\mau2\12.jpg" />
+    <Content Include="images\nu\mau2\13.jpg" />
+    <Content Include="images\nu\mau2\2.jpg" />
+    <Content Include="images\nu\mau2\3.jpg" />
+    <Content Include="images\nu\mau2\4.jpg" />
+    <Content Include="images\nu\mau2\5.jpg" />
+    <Content Include="images\nu\mau2\6.jpg" />
+    <Content Include="images\nu\mau2\7.jpg" />
+    <Content Include="images\nu\mau2\8.jpg" />
+    <Content Include="images\nu\mau2\9.jpg" />
+    <Content Include="images\nu\mau3\1.jpg" />
+    <Content Include="images\nu\mau3\10.jpg" />
+    <Content Include="images\nu\mau3\11.jpg" />
+    <Content Include="images\nu\mau3\12.jpg" />
+    <Content Include="images\nu\mau3\13.jpg" />
+    <Content Include="images\nu\mau3\2.jpg" />
+    <Content Include="images\nu\mau3\3.jpg" />
+    <Content Include="images\nu\mau3\4.jpg" />
+    <Content Include="images\nu\mau3\5.jpg" />
+    <Content Include="images\nu\mau3\6.jpg" />
+    <Content Include="images\nu\mau3\7.jpg" />
+    <Content Include="images\nu\mau3\8.jpg" />
+    <Content Include="images\nu\mau3\9.jpg" />
+    <Content Include="images\nu\mau4\1.jpg" />
+    <Content Include="images\nu\mau4\10.jpg" />
+    <Content Include="images\nu\mau4\11.jpg" />
+    <Content Include="images\nu\mau4\12.jpg" />
+    <Content Include="images\nu\mau4\13.jpg" />
+    <Content Include="images\nu\mau4\2.jpg" />
+    <Content Include="images\nu\mau4\3.jpg" />
+    <Content Include="images\nu\mau4\4.jpg" />
+    <Content Include="images\nu\mau4\5.jpg" />
+    <Content Include="images\nu\mau4\6.jpg" />
+    <Content Include="images\nu\mau4\7.jpg" />
+    <Content Include="images\nu\mau4\8.jpg" />
+    <Content Include="images\nu\mau4\9.jpg" />
+    <Content Include="images\nu\mau5\1.jpg" />
+    <Content Include="images\nu\mau5\10.jpg" />
+    <Content Include="images\nu\mau5\11.jpg" />
+    <Content Include="images\nu\mau5\12.jpg" />
+    <Content Include="images\nu\mau5\13.jpg" />
+    <Content Include="images\nu\mau5\2.jpg" />
+    <Content Include="images\nu\mau5\3.jpg" />
+    <Content Include="images\nu\mau5\4.jpg" />
+    <Content Include="images\nu\mau5\5.jpg" />
+    <Content Include="images\nu\mau5\6.jpg" />
+    <Content Include="images\nu\mau5\7.jpg" />
+    <Content Include="images\nu\mau5\8.jpg" />
+    <Content Include="images\nu\mau5\9.jpg" />
+    <Content Include="images\Untitled-1.psd" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\DOAN.csprojResolveAssemblyReference.cache" />
+    <Content Include="obj\Debug\GUI.csprojResolveAssemblyReference.cache" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="chitietsp.aspx" />
+    <Content Include="contact.aspx" />
+    <Content Include="dangki.aspx" />
+    <Content Include="dangnhap.aspx" />
+    <Content Include="giohang.aspx" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\10.jpg" />
+    <Content Include="images\11.jpg" />
+    <Content Include="images\12.jpg" />
+    <Content Include="images\13.jpg" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\2nd-day.jpg" />
+    <Content Include="images\3.jpg" />
+    <Content Include="images\5.jpg" />
+    <Content Include="images\6.jpg" />
+    <Content Include="images\7.jpg" />
+    <Content Include="images\8.jpg" />
+    <Content Include="images\9.jpg" />
+    <Content Include="images\art1.png" />
+    <Content Include="images\banner.jpg" />
+    <Content Include="images\d1.jpg" />
+    <Content Include="images\d2.jpg" />
+    <Content Include="images\d3 %281%29.jpg" />
+    <Content Include="images\d3.jpg" />
+    <Content Include="images\d4.jpg" />
+    <Content Include="images\facebook.png" />
+    <Content Include="images\g-star-raw.jpg" />
+    <Content Include="images\gift.jpg" />
+    <Content Include="images\img-sprite.png" />
+    <Content Include="images\img1.jpg" />
+    <Content Include="images\img2.jpg" />
+    <Content Include="images\label_new.png" />
+    <Content Include="images\login.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo1.png" />
+    <Content Include="images\minus.png" />
+    <Content Include="images\new.png" />
+    <Content Include="images\pic1.jpg" />
+    <Content Include="images\pic2.jpg" />
+    <Content Include="images\plus.png" />
+    <Content Include="images\sale.png" />
+    <Content Include="images\sh.jpg" />
+    <Content Include="images\shoe.jpg" />
+    <Content Include="images\small.jpg" />
+    <Content Include="images\ss1.jpg" />
+    <Content Include="images\ss2.jpg" />
+    <Content Include="images\ss3.jpg" />
+    <Content Include="images\ss4.jpg" />
+    <Content Include="images\ss5.jpg" />
+    <Content Include="images\ss6.jpg" />
+    <Content Include="images\s_icon1.png" />
+    <Content Include="images\s_icon2.png" />
+    <Content Include="images\s_icon3.png" />
+    <Content Include="images\w4.jpg" />
+    <Content Include="images\w6.jpg" />
+    <Content Include="images\w8.jpg" />
+    <Content Include="images\w9.jpg" />
+    <Content Include="images\weekday1.jpg" />
+    <Content Include="js\easing.js" />
+    <Content Include="js\jquery-1.10.2.js" />
+    <Content Include="js\jquery.easydropdown.js" />
+    <Content Include="js\jquery.etalage.min.js" />
+    <Content Include="js\jquery.flexisel.js" />
+    <Content Include="js\jquery.flexslider.js" />
+    <Content Include="js\jquery.jscrollpane.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\megamenu.js" />
+    <Content Include="js\menu_jquery.js" />
+    <Content Include="obj\Debug\DOAN.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\DOAN.dll" />
+    <Content Include="obj\Debug\DOAN.pdb" />
+    <Content Include="obj\Debug\GUI.csproj.FileListAbsolute.txt" />
+    <Content Include="Doimatkhau.aspx" />
+    <Content Include="sanpham.aspx" />
+    <Content Include="thanhtoan.aspx" />
+    <Content Include="thuonghieu.aspx" />
+    <Content Include="timkiem.aspx" />
+    <Content Include="trangchu.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="chitietsp.aspx.cs">
+      <DependentUpon>chitietsp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="chitietsp.aspx.designer.cs">
+      <DependentUpon>chitietsp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dangki.aspx.cs">
+      <DependentUpon>dangki.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dangki.aspx.designer.cs">
+      <DependentUpon>dangki.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dangnhap.aspx.cs">
+      <DependentUpon>dangnhap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dangnhap.aspx.designer.cs">
+      <DependentUpon>dangnhap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="giohang.aspx.cs">
+      <DependentUpon>giohang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="giohang.aspx.designer.cs">
+      <DependentUpon>giohang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="dautrang.Master.cs">
+      <DependentUpon>dautrang.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dautrang.Master.designer.cs">
+      <DependentUpon>dautrang.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Doimatkhau.aspx.cs">
+      <DependentUpon>Doimatkhau.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Doimatkhau.aspx.designer.cs">
+      <DependentUpon>Doimatkhau.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sanpham.aspx.cs">
+      <DependentUpon>sanpham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sanpham.aspx.designer.cs">
+      <DependentUpon>sanpham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="thanhtoan.aspx.cs">
+      <DependentUpon>thanhtoan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="thanhtoan.aspx.designer.cs">
+      <DependentUpon>thanhtoan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="thuonghieu.aspx.cs">
+      <DependentUpon>thuonghieu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="thuonghieu.aspx.designer.cs">
+      <DependentUpon>thuonghieu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="timkiem.aspx.cs">
+      <DependentUpon>timkiem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="timkiem.aspx.designer.cs">
+      <DependentUpon>timkiem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="trangchu.aspx.cs">
+      <DependentUpon>trangchu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="trangchu.aspx.designer.cs">
+      <DependentUpon>trangchu.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{e6a50ac9-a94b-4847-85e3-543ca5b3c5c9}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{c38b6c66-afab-4536-bb2b-fc423e06ad44}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>14749</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:14693/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
