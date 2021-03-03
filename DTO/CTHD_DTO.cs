@@ -13,7 +13,7 @@ namespace DTO
         public string MaHD
         {
             get { return maHD; }
-            set { maHD = value; }
+            
         }
         private string maSP;
 
