@@ -19,7 +19,7 @@ namespace BUS
         public static int TinhTongTienGH(string tenTK)
         {
             DataTable dtbKetQua = GIOHANG_DAO.LayGH(tenTK);
-            int tongTien = 0;
+            
             foreach (DataRow dr in dtbKetQua.Rows)
             {
                 tongTien += Convert.ToInt32(dr["ThanhTien"]);
